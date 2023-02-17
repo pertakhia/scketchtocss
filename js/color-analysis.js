@@ -1,10 +1,5 @@
-const Color = require("color")
-
 class ColorAnalysis {
-  constructor(colors, hasTextures, imageUrl) {
-    this.colors = colors
-    this.dominantColorScheme = this.getDominantColorScheme()
-    this.hasTextures = hasTextures
+  constructor(imageUrl) {
     this.imageUrl = imageUrl
     this.canvas = document.createElement("canvas")
     this.context = this.canvas.getContext("2d")
@@ -70,13 +65,13 @@ class ColorAnalysis {
         reject(error)
       }
 
+      console.log("this.imageUrl", this.imageUrl)
+
       this.image.src = this.imageUrl
     })
   }
-
-  checkForTextures() {
-    // implementation goes here
-  }
 }
 
-module.exports = ColorAnalysis
+console.log("ColorAnalysis instantiated")
+
+export default ColorAnalysis

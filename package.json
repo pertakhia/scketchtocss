@@ -17,10 +17,10 @@
     "creat",
     "css"
   ],
-  
   "author": "shota pertakhia",
   "license": "ISC",
   "dependencies": {
-    "color": "^4.2.3"
+    "color": "^4.2.3",
+    "require": "^2.4.20"
   }
 }
